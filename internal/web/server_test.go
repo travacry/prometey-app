@@ -15,8 +15,12 @@ func TestHome(t *testing.T) {
 	if rec.Code != http.StatusOK {
 		t.Fatalf("status %d", rec.Code)
 	}
-	if !strings.Contains(rec.Body.String(), "Прометей") {
+	body := rec.Body.String()
+	if !strings.Contains(body, "Прометей") {
 		t.Fatal("home page does not contain the studio name")
+	}
+	if strings.Contains(body, "@") {
+		t.Fatal("home page contains an email address")
 	}
 }
 
