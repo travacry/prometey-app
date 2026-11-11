@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Прометей — мобильные приложения</title>
+  <meta name="description" content="Студия Прометей делает мобильные приложения для iOS и Android: от первого экрана до публикации и сопровождения.">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">Прометей</a>
+    <a class="top-mail" href="mailto:{{.Email}}">{{.Email}}</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="kicker">Мобильные приложения</p>
+      <h1>Делаем приложения, которыми пользуются каждый день.</h1>
+      <p class="lead">Берём задачу, собираем экраны и доводим приложение до стора. iOS, Android и уже выпущенные продукты, которым нужна доработка.</p>
+      <a class="button" href="mailto:{{.Email}}">Обсудить задачу</a>
+    </section>
+
+    <section class="block" id="services">
+      <h2>Услуги</h2>
+      <ul class="cards">
+        <li>
+          <h3>iOS</h3>
+          <p>Приложение для iPhone: сценарии, интерфейс и публикация в App Store.</p>
+        </li>
+        <li>
+          <h3>Android</h3>
+          <p>Приложение для Android и выпуск в Google Play.</p>
+        </li>
+        <li>
+          <h3>Доработка</h3>
+          <p>Новые экраны и правки в уже работающем приложении.</p>
+        </li>
+        <li>
+          <h3>Сопровождение</h3>
+          <p>Обновления после запуска, чтобы приложение не останавливалось на первой версии.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block" id="process">
+      <h2>Как идёт работа</h2>
+      <ol class="steps">
+        <li>
+          <span>01</span>
+          <h3>Заявка</h3>
+          <p>Описываете задачу и кто будет пользоваться приложением.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <h3>Прототип</h3>
+          <p>Собираем экраны и проверяем, что сценарий понятен.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <h3>Выпуск</h3>
+          <p>Публикуем приложение и остаёмся на сопровождении.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="bottom" id="contact">
+    <div>
+      <p class="kicker">Контакты</p>
+      <p class="footer-title">Напишите, если нужно мобильное приложение.</p>
+    </div>
+    <a class="button" href="mailto:{{.Email}}">{{.Email}}</a>
+  </footer>
+</body>
+</html>
